@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main_section">
+        <!-- start page -->
+         <div class="start_page">
+            <h1>Wellcome!</h1>
+            <h3>Please select a course</h3>
+            <div class="courses">
+                <div class="course1">
+                    <h2>Introduction to Computer (ITC)</h2>
+                    <img src="img/itc2.png">
+                    <p>Number of Questions: <span>10</span></p>
+                </div>
+                 <div class="course2">
+                    <h2>Environmental Studies (EVS)</h2>
+                    <img src="img/evs.png">
+                    <p>Number of Questions: <span>10</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Box -->
+        <div class="info_box">
+            <div class="info-title"><span>Some Rules of this Quiz</span></div>
+            <div class="info-list">
+                <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
+                <div class="info">2. Once you select your answer, it can't be undone.</div>
+                <div class="info">3. You can't select any option once time goes off.</div>
+                <div class="info">4. You can't exit from the Quiz while you're playing.</div>
+            </div>
+            <div class="buttons">
+                <button class="quit">Exit Quiz</button>
+                <button class="restart">Continue</button>
+            </div>
+        </div>
+
+        <!-- Quiz Box -->
+        <div class="quiz_box">
+            <header>
+                <div class="title"></div>
+                <div class="timer">
+                    <div class="time_left_txt">Time Left</div>
+                    <div class="timer_sec">15</div>
+                </div>
+            </header>
+            <section>
+                <div class="que_text">
+                    <!-- question from JavaScript -->
+                </div>
+                <div class="option_list">
+                    <!-- options from JavaScript -->
+                </div>
+            </section>
+
+            <!-- footer of Quiz Box -->
+            <footer>
+                <div class="total_que">
+                    <!-- Here I've inserted Question Count Number from JavaScript -->
+                </div>
+                <button class="next_btn">Next</button>
+            </footer>
+        </div>
+
+        <!-- Result Box -->
+        <div class="result_box">
+            <div class="result_title">Quiz Result</div>
+            <div class="main_result">
+                <label>Questions Attempt: </label>
+                <span class="que_attempt">10</span>
+                <label>Correct Answers: </label>
+                <span class="correct_ans">01</span>
+                <label>Wrong Answers: </label>
+                <span class="wrong_ans">01</span>
+            </div>
+            <div class="score_remark">
+                <!-- Here I've inserted Score Remark from JavaScript -->
+            </div>
+            <div class="buttons">
+                <button class="restart">Replay Quiz</button>
+                <button class="quit">Quit Quiz</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/evs.js"></script>
+    <script src="js/itc.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
